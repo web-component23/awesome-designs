@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.reg-form {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(180deg, black, transparent);
+}
+
+.form {
+    margin: auto;
+    padding: 1rem;
+    /* border: 1px solid; */
+    border-radius: 0.5rem;
+    background: url('./image.png') right bottom;
+    filter: drop-shadow(2px 4px 6px #333);
+}
+
+.title, .action-btn {
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: #fff;
+}
+
+.form-input {
+    width: 18.75rem;
+    padding: 1.25rem;
+    position: relative;
+}
+
+.floating-label {
+    font-size: 13px;
+    position: absolute;
+    left: 25px;
+    top: 26px;
+    pointer-events: none;
+    padding: 0 0.25rem;
+    background: #0a0a0a;
+    color: #ccc;
+    transition: 0.3s ease all;
+}
+
+.floating-input {
+    font-size: 13px;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    height: 2.25rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    border: 1px solid #272727;
+    border-radius: 6px;
+    background: #0a0a0a;
+    color: #ccc;
+    outline: none;
+}
+
+.floating-input:focus {
+    border: 1px solid #c27a27;
+}
+
+.floating-input:focus + .floating-label,
+.floating-input:not(:placeholder-shown) + .floating-label {
+    top: 9px;
+    font-size: 11px;
+    color: #c27a27;
+}
+
+.term-and-condition {
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.term-and-condition span {
+    color: #c27a27;
+    cursor: pointer;
+}
+
+.radio-input {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.btn-reg {
+    height: 2rem;
+    padding: 0 0.75rem;
+    border-radius: 6px;
+    line-height: 1.6;
+    margin-top: 1.25rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: #c27a27;
+    color: #fff;
+}
+
+.btn-reg:hover {
+    background: #0a0a0a;
+    border: 1px solid #c27a27;
+    transition: 0.3s ease all;
+}
+
+.login-redirect {
+    font-size: 14px;
+    color: #fff;
+}
+
+.login-redirect a {
+    color: #7ad22a;
+}
