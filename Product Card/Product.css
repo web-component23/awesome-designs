@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.product-card {
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(2px 4px 6px rgba(30, 144, 255, 0.3));
+    overflow: hidden;
+}
+
+.product-card:hover {
+    filter: drop-shadow(0 0 20px rgba(30, 144, 255, 0.5));
+}
+
+.product-img {
+    height: 40%;
+    background: linear-gradient(to top, #6a6de3, #6a6de3cc);
+}
+
+.bg-style {
+    margin: 0 40px;
+    background: linear-gradient(#5b77f6, #3a02ac);
+    height: 120%;
+    border-radius: 0 0 50% 50%;
+    cursor: pointer;
+}
+
+.bg-style img {
+    width: 220px;
+}
+
+.product-content {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 1.25rem 0;
+}
+
+.price {
+    background: linear-gradient(#5b77f6, #3a02ac);
+    width: 45%;
+    border-radius: 0 2rem 2rem 0;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.price span {
+    font-size: 1.75rem;
+    font-family: cursive;
+}
+
+.product-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.product-title {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #6a6de3;
+}
+
+.product-desc {
+    font-weight: 500;
+    color: #808080;
+}
+
+.action-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-btn button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.buy-now {
+    background: linear-gradient(orange, blueviolet);
+    border-radius: 0 2rem 2rem 0;
+}
+
+.add-to-cart {
+    background: linear-gradient(#3a02ac, #6a6de3);
+    border-radius: 2rem 0 0 2rem;
+}
