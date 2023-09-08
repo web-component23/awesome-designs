@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(19, 23, 25, 1);
+    color: #ffffff4d;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    gap: 8px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    margin: -30px 0 10px 0;
+    background: #fff;
+    box-shadow: 0 7px 29px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.email_input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-weight: 500;
+    padding: 0 8px 0 16px;
+    height: 50px;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.btn_submit {
+    color: #fff;
+    background: linear-gradient(45deg, #e1d5f5, #63a9fe);
+    height: 50px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    letter-spacing: 1;
+    text-transform: uppercase;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 16px 0;
+    width: 100%;
+}
+
+.app-info {
+    width: 30%;
+}
+
+.app-info h2 {
+    color: #fff;
+}
+.app-info p {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.footer-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.action-header {
+    color: #fff;
+}
+
+.unordered-list {
+    list-style: none;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.unordered-list li {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+a:hover {
+    color: #63a9fe;
+    transition: 0.2s ease-in all;
+}
+
+.social-icons img {
+    width: 20px;
+    margin-right: 16px;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.copyright {
+    font-size: 14px;
+    margin: 4px 0 20px 0;
+}
