@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    height: 100%;
+    background: url('assets/bg.png') center no-repeat;
+    background-size: cover;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    background: #000000cc;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    color: #fff;
+    margin: auto;
+}
+
+.left-section .app-logo {
+    font-variant: small-caps;
+    font-size: 24px;
+}
+
+.right-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    list-style: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+a:hover {
+    color: #00bfff;
+}
+
+a::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    margin: auto;
+    width: 0%;
+    content: '';
+    color: transparent;
+    background: linear-gradient(45deg, #e1d5f5, #63a9fe);
+    height: 1px;
+    transition: 0.3s all;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    font-variant: small-caps;
+    font-size: 14px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #e1d5f5, #63a9fe);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.main {
+    height: calc(100vh - 130px);
+    display: flex;
+    color: #fff;
+}
+
+.app-content {
+    margin: auto;
+    width: 800px;
+    height: 50%;
+    padding: 4rem;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 6px #000000cc;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app-content h1 {
+    font-size: 32px;
+    color: #63a9fe;
+}
+
+.app-content form {
+    display: flex;
+}
+
+.app-content input {
+    height: 36px;
+    width: 40%;
+    padding: 7px 8px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #63a9fe;
+    color: #fff;
+}
+
+.app-content input::placeholder {
+    color: #63a9fe;
+}
+
+.app-content .learn-more {
+    position: absolute;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    text-align: center;
+    height: 50px;
+    padding: 1rem 0;
+    box-shadow: 0 2px 6px #000000cc;
+}
