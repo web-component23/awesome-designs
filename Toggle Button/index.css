@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.toggle-switch {
+    margin: auto;
+    text-align: center;
+}
+
+.toggle-switch h1 {
+    font-variant: small-caps;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 44px;
+    border: 1px solid gray;
+    background: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out all;
+}
+
+.toggle::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.4s ease-in-out all;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox:checked + .toggle::before {
+    left: 38px;
+}
+
+.checkbox:checked + .toggle {
+    background: black;
+}
+
+.checkbox:checked + .toggle::before {
+    background: white;
+}
