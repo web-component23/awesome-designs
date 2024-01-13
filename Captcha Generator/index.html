@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Captcha Generator</title>
+</head>
+<body>
+    <div class="captcha-container">
+        <h2>Captcha Generator</h2>
+        <div class="captcha-image">
+            <div class="captcha common-style"></div>
+            <div class="refresh-icon">
+                <span onclick="refreshCaptcha()" class="material-symbols-outlined">autorenew</span>
+            </div>
+        </div>
+        <div class="captcha-input">
+            <input type="text" name="captcha" class="captcha-input-field common-style" placeholder="Enter captcha" maxlength="6" required>
+        </div>
+        <div class="verify-captcha">
+            <button onclick="verifyCaptcha()" class="btn-verify common-style">Verify</button>
+        </div>
+    </div>
 
+    <script src="index.js"></script>
+</body>
+</html>
