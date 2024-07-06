@@ -1,0 +1,159 @@
+:root {
+    --color-background: #141414;
+    --color-text-white: #FFFFFF;
+    --color-placeholder: #C4C4C4;
+    --color-light-black: #29384D;
+    /* --color-background-input-field: #242424; */
+    --color-border-1: #383838;
+    --color-actions: #38E078;
+    --color-border: #E5E8EB;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    color: var(--color-text-white);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 65px;
+    box-shadow: 0 0 0.8 0 var(--color-border);
+}
+
+/* .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+} */
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--color-text-white);
+}
+
+.nav-link a:hover {
+    color: var(--color-actions);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    height: 40px;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.btn-sign-in {
+    background-color: var(--color-actions);
+}
+
+.btn-sign-up {
+    background-color: var(--color-light-black);
+    color: var(--color-text-white);
+}
+
+.container .cover-photo {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 48px;
+}
+
+.teams-image {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.card::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-light-black);
+    position: absolute;
+    top: -80px;
+    left: 15px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .35s ease;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    background: var(--color-light-black);
+    border: 1px solid var(--color-border-1);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card:hover::before {
+    opacity: .75;
+    transform: scale(8);
+}
+
+.team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .35s ease-out ;
+}
+
+.card:hover .team-img {
+    opacity: .4;
+}
+
+.card .box-content {
+    padding: 20px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-20px, -20px);
+}
+
+.card:hover .box-content {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition-delay: .10s;
+}
+
+.footer {
+    display: flex;
+    font-size: 14px;
+    box-shadow: 0 -4px 3px rgba(50, 50, 50, .75);
+}
+
+.footer-container {
+    margin: auto;
+    text-align: center;
+}
