@@ -1,0 +1,79 @@
+:root {
+    --color-background: #141414;
+    --color-text-white: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    color: var(--color-text-white);
+    display: flex;
+    height: 100vh;
+}
+
+.card {
+    position: relative;
+    margin: auto;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    color: var(--color-text-white);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 5px 15px;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .35s ease-out;
+}
+
+.card-content {
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(-20px, -20px);
+}
+
+.title {
+    margin: 20px 0 5px 0;
+}
+
+.designation {
+    font-size: 14px;
+}
+
+.card::before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-background);
+    position: absolute;
+    top: -88px;
+    left: 15px;
+    opacity: 0;
+    z-index: 1;
+    transition: all .35s ease;
+}
+
+.card:hover::before {
+    opacity: 0.8;
+    transform: scale(8);
+}
+
+.card:hover .card-img {
+    opacity: 0.7;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition-delay: .10s;
+}
